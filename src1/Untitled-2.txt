@@ -1,0 +1,172 @@
+import React, {Component} from 'react';  
+import { Text, View ,Dimensions,StyleSheet,Image,Picker,ScrollView,TextInput,TouchableOpacity,TouchableHighlight,ImageBackground} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import { Searchbar,Card } from 'react-native-paper';
+import { Header} from 'react-native-elements'
+const {width,height} = Dimensions.get('window');
+  
+export default class NewpostScreen extends Component{  
+  static navigationOptions = {
+    title: 'Ad Details',
+    headerStyle: {
+      backgroundColor: '#FF9933',
+    },
+    headerTintColor: '#FF9933',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+      color:'#FFFFFF'
+    },
+  };     
+    render() {  
+        return(  
+            <View style={styles.container}>
+              
+                <Text style={{fontSize:width/23,fontWeight:'bold',textAlign:'center',marginTop:'4%'}}>Choose Type of Listing</Text>
+                
+                <View style={{flexDirection:'row',marginTop:'8%'}}> 
+                  <View style={styles.rectangle105}>
+                        
+                            <TouchableOpacity style={{width:'100%',height:'200%',backgroundColor:'#FF9933',flex:1}} >   
+                               <View style={{flex:1,alignSelf:'center',marginTop:'10%'}}>
+                                <Icon name="telegram-plane" color='#FFFFFF' size={20} />
+                                </View>
+                                <View style={{flex:1,alignSelf:'center'}}>
+                                <Text style={{color:'#FFFFFF',fontSize:width/30,fontWeight:'bold'}}>Basic Listing</Text>  
+                                </View> 
+                            </TouchableOpacity>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%',marginTop:'8%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold',marginRight:'25%'}}>One Basic Ad</Text>
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold',marginRight:'13%'}}>Live Ads Display</Text>
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold',marginRight:'13%'}}>Photo Gallery(1)</Text>
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold',marginRight:'43%'}}>Featured</Text>
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/50,fontWeight:'bold',marginRight:'0%'}}>Complete Business Profile</Text>
+                                
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold'}}>Search Results in Second</Text>
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold'}}>365 Days Availability</Text>
+                            </View>
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                              <View style={{flex:1,marginLeft:'3%'}}>
+                                <Icon name="check" color='#00ff00' size={15} />
+                              </View>
+                                <Text style={{color:'#000000',fontSize:width/40,fontWeight:'bold'}}>Video Visuals Ads</Text>
+                            </View> 
+                            <View style={{flex:1,alignSelf:'center',flexDirection:'row',height:'100%'}}>
+                                <TouchableOpacity style={{width:'50%',backgroundColor:'green'}}>
+                                  <Text> Next</Text>
+                                </TouchableOpacity>
+                            </View>
+                             
+                  </View>
+                  <View style={styles.rectangle106}>
+                    <Text>vdvjgdsjgsj</Text>
+                  </View>
+                  <View style={styles.rectangle107}>
+                    <Text>sjhfhjsuyxsasuv</Text>
+                  </View>
+                </View>
+              
+            </View>  
+        ); 
+    }  
+}  
+// NewpostScreen.navigationOptions={  
+//     tabBarIcon:({tintColor, focused})=>(  
+//     <Icon  
+//         name={focused ? "clone" : "clone"}  
+//         color={tintColor}  
+//         size={25}  
+//     />  
+// )  
+// }  
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#F6F6F6',
+      width:'100%',
+      
+    },
+      rectangle105 : {
+        flex:1,
+        width: '80%',
+        
+        marginLeft:'2%',
+        borderWidth: 1,
+    borderRadius: 5,
+    backgroundColor:'#fff',
+    borderColor: 'lightgray',
+    borderBottomWidth: 0,
+    shadowRadius: 10,
+     
+      }, 
+      rectangle107 : {
+        width: '30%',
+        height: '160%',
+        flex:1,
+        backgroundColor:'#fff',
+         
+        marginBottom:10,
+        marginLeft:'2%',
+        paddingTop:25,
+        borderWidth:1,
+        borderColor:'#000000',
+        shadowColor:'#FFFFFF',
+        shadowOpacity:0,
+        shadowRadius:5,
+        shadowOffset:{
+            width:10,
+            height:5
+        },  
+      },
+      rectangle106 : {
+        width: '30%',
+        height: '160%',
+        flex:1,
+        backgroundColor:'#fff', 
+        marginBottom:10,
+        marginLeft:'2%',
+        paddingTop:25,
+        borderWidth:1,
+        borderColor:'#000000',
+        shadowColor:'#FFFFFF',
+        shadowOpacity:0,
+        shadowRadius:5,
+        shadowOffset:{
+            width:10,
+            height:5
+        },  
+      },          
+  });
